@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- -------- Google Fonts-------- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&family=Mulish:wght@200;300;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- --------- External Css ------------- -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- -------------- NavBar Start ---------- -->
+    <section id="dashboardNavbar">
+        <div class="container">
+            <nav class="navbar dasbordMiniNav navbar-expand-lg ">
+                <img class="img-fluid leftBar" src="images/bar.png" alt="bar">
+                <a class="navbar-brand leftLogo" href="#">
+                    <img src="images/logo.png" alt="logo">
+                </a>
+
+                <span class="extraActiveSts"><i class="fas fa-circle pr-2"></i> Status</span>
+
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav dasbordNavLink ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#"><i class="fas fa-circle pr-2"></i> Status</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#"><i class="far fa-bell"></i></a>
+                        </li>
+                        <li class="nav-item">
+
+                            <a class="nav-link" href="#">
+                                <img class="img-fluid activeUser" src="images/activeUser.png">
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                John
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Pricing</a>
+                                <a class="dropdown-item" href="#">Documentation</a>
+                                <a class="dropdown-item" href="#">FAQ</a>
+                                <a class="dropdown-item" href="#">Logout</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="mobileMenu">
+                <div class="crossIcon text-right mt-4 pr-4">
+                    <img class="img-fluid crossBtnMbMini" src="images/cross.png" alt="">
+                </div>
+                <div class="profilePicMini mb-4 px-4 d-flex justify-center-around align-items-center">
+                    <img class="img-fluid" src="images/activeUser.png" alt="activeUser">
+                    <h4 class="pl-4">John Doe</h4>
+                </div>
+                <div class="notification my-3">
+                    <span class="far fa-bell miniBel"></span>
+                    <h6 class="text-center notiTile">Notification</h6>
+                </div>
+                <div class="dropdown-divider mt-5"></div>
+
+                <div class="mobileMenuLink px-4">
+                    <ul class="list-unstyled">
+                        <li><a class="clickedLink" href="#"> Pricing</li></a>
+                        <li><a class="clickedLink" href="#"> Documentation</li></a>
+                        <li><a class="clickedLink" href="#"> Support & Help</li></a>
+                        <li><a class="clickedLink" href="#"> Logout</li></a>
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <!-- -------------- NavBar End ---------- -->
+
+    <!-- ----------------- Side Nevigation Start -------- -->
+    <section id="sideNavigation">
+        <div class="container">
+            <div class="row mr-0">
+                <div class="col-md-3 pr-0">
+                    <div class="sideNevigation px-3">
+                        <div class="list-group dashbordNavList">
+                            <a href="dashboard.html" class="list-group-item list-group-item-action">Dashboard </a>
+                            <a href="update.html" class="list-group-item list-group-item-action">Upgrade</a>
+                            <a href="subscription.html" class="list-group-item list-group-item-action">Subscription
+                                Plan</a>
+                            <a href="account.html" class="list-group-item list-group-item-action">Account</a>
+                            <a href="payment.html" class="list-group-item list-group-item-action">Payment</a>
+                            <a href="apiUsage.html" class="list-group-item list-group-item-action active">Api Usage</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-9 dashbordContent">
+                    <div class="dashbordDetailContent ml-0 w-100 p-md-5" style="background: none; box-shadow: none;">
+
+                        <div class="row">
+                            <div class="col-sm">
+                                <div class="card apiHeight" style="background: #FFFFFF;
+box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.06);">
+                                    <div class="card-body">
+                                        <h5 class="card-title py-3">This Month's API Usage:</h5>
+
+                                        <div class="apiUsed d-flex align-items-center justify-content-between">
+                                            <div class="apiRequest">
+                                                <h5>API Requests</h5>
+                                            </div>
+                                            <div class="apiCheckUseCtrl">
+                                                <p class="">830 / 5,000</p>
+                                                <div class="progress">
+                                                    <div class="progress-bar bg-success" role="progressbar"
+                                                        style="width: 25%" aria-valuenow="25" aria-valuemin="0"
+                                                        aria-valuemax="100"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="usePreiod d-flex justify-content-between mt-5">
+                                            <p>Usage period:</p>
+                                            <p>2021-08-01 - 2021-08-31</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- ----------------- Side Nevigation End -------- -->
+
+
+    <!-- -------------- Footer Part Start ---------- -->
+    <div id="footer">
+        <div class="container footer py-5">
+            <div class="row">
+                <div class="col-md-4">
+                    <img class="img-fluid footerLogo" src="images/logo.png" alt="logo">
+                    <p class="footerText">Lorem ipsum dolor sit amet, consectetur adipiscing <br> elit, sed do eiusmod
+                        tempor
+                        incididunt</p>
+                    <div class="footerSocialIcon">
+                        <ul class="list-unstyled d-flex">
+                            <li><i class="fab fa-facebook-square"></i></li>
+                            <li><i class="fab fa-twitter"></i></li>
+                            <li><i class="fab fa-instagram"></i></li>
+                            <li><i class="fab fa-pinterest"></i></li>
+                            <li><i class="fab fa-youtube"></i></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 company">
+                    <h3 class="pb-2">Company</h3>
+                    <ul class="list-unstyled">
+                        <li> <a href="#"> About Us </a></li>
+                        <li> <a href="#"> Customers </a></li>
+                        <li> <a href="#"> Community </a></li>
+                        <li> <a href="#"> Request a Feature </a></li>
+                        <li> <a href="#"> Nonprofits </a></li>
+                        <li> <a href="#"> Careers </a></li>
+                        <li> <a href="#"> Brand kit </a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 company">
+                    <h3 class="pb-2">Support</h3>
+                    <ul class="list-unstyled">
+                        <li> <a href="#"> Help Center </a></li>
+                        <li> <a href="#"> Webinars </a></li>
+                        <li> <a href="#"> Tutorials </a></li>
+                        <li> <a href="#"> Status </a></li>
+                        <li> <a href="#"> iOS App </a></li>
+                        <li> <a href="#"> Android App </a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 company">
+                    <h3 class="pb-2">Free Resources</h3>
+                    <ul class="list-unstyled">
+                        <li> <a href="#"> Browser Extension</a></li>
+                        <li> <a href="#"> Resource Center</a></li>
+                        <li> <a href="#"> Content Library </a></li>
+                        <li> <a href="#"> Remix </a></li>
+                        <li> <a href="#"> Podcast </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="container copyright">
+            <div class="row">
+                <div class="col-md-6 footerLink">
+                    <p>Copyright © 2021 Tapsy Network</p>
+                </div>
+                <div class="col-md-6 ">
+                    <p class="footerLink text-right"><a href="#">Privacy</a> – <a href="#">Terms</a> – <a
+                            href="#">Security</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -------------- Footer Part End ---------- -->
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script src="https://kit.fontawesome.com/5857fbd9b0.js" crossorigin="anonymous"></script>
+    <script>
+        //   =============== Dashboard ==============
+        // ============ Handle mobileMenu on Dashboard =======================
+
+        const leftBar = document.querySelector('.leftBar');
+        const mobileMenu = document.querySelector('.mobileMenu');
+        const crossBtnMbMini = document.querySelector('.crossBtnMbMini');
+        const clickedLink = document.querySelectorAll('.clickedLink');
+
+
+        leftBar.addEventListener('click', () => { // show menu on click
+            mobileMenu.style.width = '75%';
+
+        })
+
+        crossBtnMbMini.addEventListener('click', () => { // hide menu on click
+            mobileMenu.style.width = '0%';
+        })
+
+        clickedLink.forEach(item => { // hide menu after click link and go to the link
+            item.addEventListener('click', event => {
+                mobileMenu.style.width = '0%';
+            })
+        })
+    </script>
+</body>
+
+</html>
